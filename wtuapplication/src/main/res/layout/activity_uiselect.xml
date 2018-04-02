@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@mipmap/ipbackground"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="match_parent">
+
+<android.support.design.widget.AppBarLayout
+    android:id="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        tools:targetApi="lollipop" />
+
+</android.support.design.widget.AppBarLayout>
+<LinearLayout
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="100dp"
+    android:layout_below="@+id/appbar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ui1"
+    android:orientation="horizontal">
+    <Button
+        android:textSize="30sp"
+        android:text="文件更新"
+        android:id="@+id/btn_UpDateFile"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/student_select_item"/>
+    <Button
+        android:textSize="30sp"
+        android:text="功能选项"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/btn_FunctionSelect"
+        android:layout_weight="1"
+        android:background="@drawable/student_select_item"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/ui1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ui2"
+    android:orientation="horizontal">
+    <Button
+        android:textSize="30sp"
+        android:text="设置菜单"
+        android:id="@+id/btn_SetMenu"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/student_select_item"/>
+    <Button
+        android:textSize="30sp"
+        android:text="操作说明"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/btn_OperateInstruction"
+        android:layout_weight="1"
+        android:background="@drawable/student_select_item"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ui2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ui3"
+        android:orientation="horizontal">
+        <Button
+            android:textSize="30sp"
+            android:text="重启"
+            android:id="@+id/shut_on"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/student_select_item"/>
+        <Button
+            android:textSize="30sp"
+            android:text="关机"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/shut_down"
+            android:layout_weight="1"
+            android:background="@drawable/student_select_item"/>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/ipbackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            tools:targetApi="lollipop" />
+
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:id="@+id/ui1"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_SubtitlesPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/student_select_item"
+            android:text="字幕播放"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_SubtitlesClose"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/student_select_item"
+            android:text="字幕关闭"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/ui2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ui1">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_PIP_Play"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/student_select_item"
+            android:text="画中画播放"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_PIP_Close"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/student_select_item"
+            android:text="画中画关闭"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/ui2"
+        android:id="@+id/ui3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_video_close"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/student_select_item"
+            android:text="视频关闭"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_picture_close"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/student_select_item"
+            android:text="图片关闭"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/ui4"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ui3">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_background_close"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/student_select_item"
+            android:text="背景关闭"
+            android:textSize="30sp" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_mainProcess_close"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/student_select_item"
+            android:text="程序关闭"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">武纺项目</string>
+    <string name="sendFile">上传文件</string>
+    <string name="playVideo">选择播放</string>
+    <string name="creatNewWeb">新建服务器</string>
+    <string name="findNewComputer">搜索</string>
+    <string name="localNet">局域网</string>
+    <string name="web">服务器</string>
+    <string name="userName">用户名</string>
+    <string name="webComputer">服务器</string>
+</resources>

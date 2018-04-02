@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- 删除对话框线性布局对于_id字段 -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/send_mesg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- _id提示 -->
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入发送内容"
+            android:textSize="20dp" />
+
+        <!-- _id输入 -->
+
+        <EditText
+
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!-- 确认插入按钮 -->
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_mesg"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:text="发送" />
+
+    <!-- 取消插入按钮 -->
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/send_mesg"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="取消" />
+
+</RelativeLayout>

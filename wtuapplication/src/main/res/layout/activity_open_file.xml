@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/ipbackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_new_ip_coputer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wtuapplication.activity.FindNewIpComputer">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            tools:targetApi="lollipop" />
+
+    </android.support.design.widget.AppBarLayout>
+    <GridView
+        android:id="@+id/gridView_showopenFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:numColumns="5"
+        android:padding="10dp"
+        android:verticalSpacing="10dp"
+        android:layout_below="@+id/appbar"
+        android:layout_above="@+id/btn_sendFile"
+        android:layout_alignRight="@+id/btn_sendFile"
+        android:layout_alignEnd="@+id/btn_sendFile"
+        android:longClickable="true">
+    </GridView>
+    <Button
+        android:id="@+id/btn_sendFile"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/student_select_item"
+        android:text="@string/sendFile"
+        android:textSize="24sp" />
+</RelativeLayout>
